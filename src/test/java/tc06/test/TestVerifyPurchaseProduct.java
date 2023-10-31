@@ -45,7 +45,7 @@ public class TestVerifyPurchaseProduct {
             Assert.assertTrue(check);
 
             purchaseProductPage.clickProceedBtn();
-            purchaseProductPage.inputAddress("HCM HCM HCM");
+            purchaseProductPage.inputAddress("HCM);
             purchaseProductPage.inputCity("Ha Noi");
             purchaseProductPage.inputState();
             purchaseProductPage.inputZip("123");
