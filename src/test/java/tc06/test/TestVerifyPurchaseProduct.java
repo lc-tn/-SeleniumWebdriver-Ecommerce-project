@@ -25,7 +25,7 @@ public class TestVerifyPurchaseProduct {
             purchaseProductPage.clickMyAccountLink();
 
             // Login and press whistlist link
-            purchaseProductPage.enterEmail("lamtanloc@gmail.com");
+            purchaseProductPage.enterEmail("a@gmail.com");
             purchaseProductPage.enterPassword("123456");
             purchaseProductPage.clickLoginButton();
             purchaseProductPage.clickWhistListLink();
@@ -41,11 +41,12 @@ public class TestVerifyPurchaseProduct {
             Assert.assertNotNull(shippingCost);
 
             //Select Shipping Cost, Update Total and Verify shipping cost is added to total
+            purchaseProductPage.addShippingCost();
             boolean check = purchaseProductPage.addShippingCost();
             Assert.assertTrue(check);
 
             purchaseProductPage.clickProceedBtn();
-            purchaseProductPage.inputAddress("HCM");
+            purchaseProductPage.inputAddress("HCM HCM HCM");
             purchaseProductPage.inputCity("Ha Noi");
             purchaseProductPage.inputState();
             purchaseProductPage.inputZip("123");
